@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+  .box {
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+  }
