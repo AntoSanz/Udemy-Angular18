@@ -1,0 +1,10 @@
+<div class="d-flex justify-content-center mt-3">
+    <div class="m-3">
+        <label class="me-2" for="input-text">Escribe algo</label>
+        <input id="input-text" type="text" (input)="updateText($event)" />
+    </div>
+    <div class="m-3">
+        <label class="me-2" for="reflect-text">Texto replicado</label>
+        <input id="reflect-text" type="text" [value]="text" readonly />
+    </div>
+</div>

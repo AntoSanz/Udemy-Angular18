@@ -1,1 +1,18 @@
-{{title}}
+<section>
+        <div class="p-3 border-bottom m-3">
+        <h1 class="text-danger text-center">{{title}}</h1>
+    </div>
+    <div class="pb-3 border-bottom mb-3">
+        <h3 class="text-warning text-center">{{eventBindingTitle}}</h3>
+        <app-show-message></app-show-message>
+    </div>
+    <!-- <app-child-component></app-child-component> -->
+    <div class="pb-3 border-bottom mb-3">
+        <h3 class="text-warning text-center">{{propertyBindingTitle}}</h3>
+        <app-reflect-text></app-reflect-text>
+    </div>
+    <div class="pb-3 border-bottom mb-3">
+        <h3 class="text-warning text-center">{{twoWayTitle}}</h3>
+        <app-two-way-binding></app-two-way-binding>
+    </div>
+</section>
