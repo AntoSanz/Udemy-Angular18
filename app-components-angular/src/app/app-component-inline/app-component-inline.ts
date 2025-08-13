@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <div class="box">
-      <strong>{{title}}</strong>
+      <h1 class="text-warning">{{title}}</h1>
       <p>{{description}}</p>
       <ul>
         <li>{{inlineTemplateDescription}}</li>
