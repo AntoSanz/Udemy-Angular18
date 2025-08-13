@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-componente-inline',
+  selector: 'app-component-inline',
   imports: [],
   template: `
     <div class="box">
@@ -22,7 +22,7 @@ import { Component } from '@angular/core';
   }
   `
 })
-export class AppComponenteInline {
+export class AppComponentInline {
   title = "app-componente-inline works!";
   description ="Comando para crear componente inline: g c app-componente-inline --inline-template --inline-style --skip-tests";
   inlineTemplateDescription = "--inline-template: No se genera el archivo html";
