@@ -1,12 +1,13 @@
-import { Component, signal } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { TranslatePipe } from './pipes/translate-pipe';
+import { WithTranslation } from './mixins/with-translation.mixin';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [CommonModule, TranslatePipe],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrl: './app.css',
 })
-export class App {
-  protected readonly title = signal('app-servicio-locales');
-}
+export class AppComponent extends WithTranslation(class {}) {}
