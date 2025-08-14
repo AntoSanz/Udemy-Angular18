@@ -1,0 +1,16 @@
+<section>
+    <div class="text-center m-3">
+        <label for="operator-a" class="me-2">Operador A</label>
+        <input id="operator-a" type="number" [(ngModel)]="operatorA" autocomplete="off"/>
+    </div>
+    <div class="text-center m-3">
+        <label for="operator-b" class="me-2">Operador B</label>
+        <input id="operator-b" type="number" [(ngModel)]="operatorB" autocomplete="off"/>
+    </div>
+    <div class="text-center m-3">
+        <button class="btn btn-primary pe-5 ps-5" (click)="calc()">Sumar</button>
+    </div>
+    <div class="text-center m-3">
+       <span>Resultado: {{result}}</span>
+    </div>
+</section>
