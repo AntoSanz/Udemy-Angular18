@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-component-if',
+  selector: 'app-if-component',
   imports: [],
-  templateUrl: './component-if.html',
-  styleUrl: './component-if.css',
+  templateUrl: './if-component.html',
+  styleUrl: './if-component.css',
 })
-export class ComponentIf {
+export class IfComponent {
   isAuthenticated: boolean = false;
 
   toggleAuthentication(): void {

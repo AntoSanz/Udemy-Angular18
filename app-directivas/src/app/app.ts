@@ -1,15 +1,17 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { ComponentIf } from './component-if/component-if';
 import { AddTask } from './add-task/add-task';
+import { ForComponent } from "./for-component/for-component";
+import { IfComponent } from "./if-component/if-component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ComponentIf, AddTask],
+  imports: [RouterOutlet, AddTask, ForComponent, IfComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  titleIf: string = 'Directiva IF';
+  titleIfComponent: string = 'Directiva @if';
   tittleLocalReference: string = 'Local Reference';
+  titleForComponent: string = 'Directiva @for'
 }
