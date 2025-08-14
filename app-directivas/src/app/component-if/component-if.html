@@ -1,0 +1,9 @@
+<div class="container mt-5 text-center">
+    <h2>Estado de la Autenticacion</h2>
+    @if(isAuthenticated){
+    <p class="text-success">Estás autenticado</p>
+    } @else {
+    <p class="text-danger">No estás autenticado</p>
+    }
+    <button class="btn btn-primary mt-3" (click)="toggleAuthentication()">Auth</button>
+</div>
